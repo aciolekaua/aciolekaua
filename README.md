@@ -1,8 +1,8 @@
-### Olá eu sou Kauã Carlos 👋
+### Olá, eu sou Kauã Carlos 👋
 
 
 - 🔭 Atualmente estou trabalhando com front e back-end
-- 🌱 Estou estudano PHP, HTML e CSS usando o Jquery e Bootstraph
+- 🌱 Estou estudano PHP, HTML e CSS usando o Jquery,Bootstraph e Java
 - 📫 email pra contato: aciolekaua74@gmail.com
 - ⚡ Fato engraçado: eu virei programador, por influência de um jogo o Up alta aventuras
 <div>
