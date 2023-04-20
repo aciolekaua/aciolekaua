@@ -4,7 +4,7 @@
 - 🔭 Atualmente estou trabalhando com front e back-end
 - 🌱 Estou estudano PHP, HTML,CSS,Jquery,Bootstraph e Java
 - 📫 email pra contato: aciolekaua74@gmail.com
-- ⚡ Fato engraçado: eu virei programador, por influência de um jogo o Up alta aventuras
+- ⚡ Fato engraçado: eu virei programador, por influência de um jogo o Up alta aventuras e inicialmente queria ser desenvolvedor de jogos
 <div>
   <a href="https://github.com/aciolekaua">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=aciolekaua&show_icons=true&theme=tokyonight&include_all_comits=true"  />
