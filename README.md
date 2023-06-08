@@ -19,7 +19,7 @@
     <img aling="center" alt="kaua-bootstrap" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
     <img aling="center" alt="kaua-jquery" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg" />
     <img aling="center" alt="kaua-java" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
-    <img aling="rigth" alt="kaua-gif" src="https://media.tenor.com/INWZc-XWx2AAAAAC/skeleton-berserk.gif" />
+    <img aling="rigth" alt="kaua-sql" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
 
 ##
 
