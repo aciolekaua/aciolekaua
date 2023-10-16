@@ -7,8 +7,8 @@
 - ⚡ Fato engraçado: eu virei programador, por influência de um jogo o Up alta aventuras e inicialmente queria ser desenvolvedor de jogos
 <div>
   <a href="https://github.com/aciolekaua">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=aciolekaua&show_icons=true&theme=tokyonight&include_all_comits=true"  />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aciolekaua&layout=compact&langs_count=16&theme=tokyonight" />
+  <img height="200em" src="https://github-readme-stats.vercel.app/api?username=aciolekaua&show_icons=true&theme=tokyonight&include_all_comits=true"  />
+  <img height="200em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aciolekaua&layout=compact&langs_count=16&theme=tokyonight" />
 </div>
 
 <div style="display: inline_block" ><br>
@@ -28,5 +28,3 @@
   <a href="https://www.instagram.com/kaua.xte/" target="_blank" ><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
   <a href="https://www.linkedin.com/in/kau%C3%A3-aciole-a73973238/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 </div>
-
-![Snake animation](https://github.com/aciolekaua/aciolekaua/blob/output/github-contribution-grid-snake.svg)
