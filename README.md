@@ -2,7 +2,7 @@
 
 
 - 🔭 Atualmente estou trabalhando com front e back-end
-- 🌱 Estou Estudando PHP, HTML, CSS, Jquery, Bootstraph, Java ,SQL e Python
+- 🌱 Estou Estudando PHP, HTML, CSS, Jquery, Bootstraph, Java ,SQL e Python,Laravel
 - 📫 email pra contato: aciolekaua74@gmail.com
 - ⚡ Fato engraçado: eu virei programador, por influência de um jogo o Up alta aventuras e inicialmente queria ser desenvolvedor de jogos
 <div>
@@ -20,7 +20,8 @@
     <img aling="center" alt="kaua-jquery" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg" />
     <img aling="center" alt="kaua-java" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
     <img aling="center" alt="kaua-sql" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
-    <img aling="right" alt="kaua-python" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
+    <img aling="center" alt="kaua-python" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
+    <img aling="center" alt="kaua-python" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain-wordmark.svg" />    
 
 ##
 
