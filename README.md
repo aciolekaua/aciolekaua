@@ -2,7 +2,7 @@
 
 
 - 🔭 Atualmente estou trabalhando com front e back-end
-- 🌱 Estou Estudando PHP, HTML, CSS, Jquery, Bootstraph, Java ,SQL,Python,Laravel
+- 🌱 Estou Estudando PHP, HTML, CSS, Jquery, Bootstraph ,SQL,Python,Laravel
 - 📫 email pra contato: aciolekaua74@gmail.com
 - ⚡ Fato engraçado: eu virei programador, por influência de um jogo o Up alta aventuras e inicialmente queria ser desenvolvedor de jogos
 <div>
