@@ -5,23 +5,39 @@
 - 🌱 Estou Estudando PHP, HTML, CSS, Jquery, Bootstraph ,SQL,Python,Laravel e Hacking Ético
 - 📫 email pra contato: aciolekaua74@gmail.com
 - ⚡ Fato engraçado: eu virei programador, por influência de um jogo o Up alta aventuras e inicialmente queria ser desenvolvedor de jogos
-<div>
-  <a href="https://github.com/aciolekaua">
-  <img height="200em" src="https://github-readme-stats.vercel.app/api?username=aciolekaua&show_icons=true&theme=tokyonight&include_all_comits=true"  />
-  <img height="200em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aciolekaua&layout=compact&langs_count=16&theme=tokyonight" />
+
+###
+
+<div align="left">
+  <img src="https://github-readme-stats.vercel.app/api?username=aciolekaua&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=false&disable_animations=false&theme=midnight-purple&locale=en&hide_border=false" height="200" alt="stats graph"  />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=aciolekaua&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=9&theme=midnight-purple&hide_border=false" height="200" alt="languages graph"  />
 </div>
 
-<div style="display: inline_block" ><br>
-    <img aling="center" alt="kaua-php" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
-    <img aling="center" alt="kaua-html" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-    <img aling="center" alt="kaua-css" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-    <img aling="center" alt="kaua-js" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-    <img aling="center" alt="kaua-bootstrap" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
-    <img aling="center" alt="kaua-jquery" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg" />
-    <img aling="center" alt="kaua-java" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
-    <img aling="center" alt="kaua-sql" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
-    <img aling="center" alt="kaua-python" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
-    <img aling="right" alt="kaua-kali-linux" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
+###
+
+<img align="right" height="150" src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTl4ZnBjbHAyY2lmaGJzNjVtdHhzMjc4dXMyMDBtaHByNmp5c2pteSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/f3iwJFOVOwuy7K6FFw/giphy.gif"  />
+
+###
+
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" height="30" alt="python logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" height="30" alt="javascript logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="html5 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="css3 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="30" alt="php logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="30" alt="bootstrap logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" height="30" alt="mysql logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="30" alt="linux logo"  />
+  <img width="12" />
+  <img src="https://cdn.simpleicons.org/selenium/43B02A" height="30" alt="selenium logo"  />
+</div>
 
 ##
 
