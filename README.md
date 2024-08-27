@@ -2,7 +2,7 @@
 
 
 - 🔭 Atualmente estou trabalhando com Back-end,Python voltado para automações
-- 🌱 Estou Estudando PHP, HTML, CSS, Jquery, Bootstraph ,SQL,Python,Laravel e Hacking Ético
+- 🌱 Estou Estudando PHP, SQL, Python, Laravel e Hacking Ético
 - 📫 email pra contato: aciolekaua74@gmail.com
 - ⚡ Fato engraçado: eu virei programador, por influência de um jogo o Up alta aventuras e inicialmente queria ser desenvolvedor de jogos
 
