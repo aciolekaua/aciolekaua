@@ -1,0 +1,200 @@
+<main class="mt-5 pt-3">
+<div class="container-fluid">
+    <div class='card mb-3'>
+        <div class='card-header'>
+            <span class='me-2'>
+                <i class="bi bi-list-ul me-2"></i>Filtro
+            </span>
+        </div>
+        <div class='card-body'>
+            <form id='formFiltro' class='row'>
+
+                <div class='col-sm-6'>
+                    <label class='form-label text-matrix' for="PJ">PJ*</label>
+                    <select class="form-select" name="PJ" id="PJFormFiltro" onchange='buscarSimples();'></select>
+                </div>
+
+                <div class='col-sm-6'>
+                    <label class='form-label text-matrix' for="Anexo">Anexo*</label>
+                    <select class="form-select" name="Anexo" id="AnexoFormFiltro" onchange='buscarSimples();'>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+            </form>
+        </div>
+    </div> 
+    <div class='card mb-3'>
+        <div class='card-header'>
+            <span class='me-2'>
+                <i class="bi bi-list-ul me-2"></i>Simples Nacional
+            </span>
+        </div>
+        <div class='card-body'>
+
+            <form class='row' id='formSimples' action='' method='POST'>
+                <div class='col-md-4 mb-2'>
+                    <label class='form-label text-matrix' for="MesCompetencia">Mês de Competência*</label>
+                    <select class="form-select" name="MesCompetencia" id="MesCompetencia">
+                        <option value="" disabled selected>Selecione uma das Opções</option>
+                        <option value="1">Janeiro</option>
+                        <option value="2">Fevevereiro</option>
+                        <option value="3">Março</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Maio</option>
+                        <option value="6">Junho</option>
+                        <option value="7">Julho</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Setembro</option>
+                        <option value="10">Outubro</option>
+                        <option value="11">Novembro</option>
+                        <option value="12">Dezembro</option>
+                    </select>
+                </div>
+                <div class='col-md-4 mb-2'>
+                    <label class='form-label text-matrix' for="AnoCompetencia">Ano de Competência*</label>
+                    <select class="form-select" name="AnoCompetencia" id="AnoCompetencia">
+                        <option value="" disabled selected>Selecione uma das Opções</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                    </select>
+                </div>
+                <!--<div class='col-md-3 mb-2'>
+                    <label class='form-label text-matrix' for="Anexo">Anexo*</label>
+                    <select class="form-select" name="Anexo" id="Anexo">
+                        <option value="" disabled selected>Selecione uma das Opções</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>-->
+                <div class='col-md-4 mb-2'>
+                    <label class='form-label testeLabel text-matrix' for="ValorCompetencia">Valor*</label>
+                    <input class='form-control' placeholder='' type="text" id="ValorCompetencia" name="ValorCompetencia" maxlength="18"
+                        size="18"
+                        oninput="mascaraDinheiro(this);"
+                        onkeypress="mascaraDinheiro(this);"
+                        autocomplete=off 
+                    />
+                </div>
+                <div class="col-md-12 mt-3">
+                    <button type='button' class='btn btn-orange' onclick='registroSimples();'>Salvar</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class='card mb-3'>
+        <div class='card-body'>
+
+            <div class='row'>
+                <div class="table-responsive">
+                    <table id='tabelaSimplesNacional' class="table table-striped table-bordered text-center">
+                        <thead>
+                            <tr>
+                                <th>Status</th>
+                                <th>Ano</th>
+                                <th>Mês</th>
+                                <th>Aliquota Efetiva</th>
+                                <th>Valor</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalUpdateSimples" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Editar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class='row' id='formUpdateSimples'>
+                        <div class='col-md-6 mb-2'>
+                            <label class='form-label' for="MesCompetencia">Mês*</label>
+                            <select class="form-select" name="MesCompetencia" id="MesCompetencia">
+                                <option value="">Selecione uma das Opções</option>
+                                <option value="1">Janeiro</option>
+                                <option value="2">Fevevereiro</option>
+                                <option value="3">Março</option>
+                                <option value="4">Abril</option>
+                                <option value="5">Maio</option>
+                                <option value="6">Junho</option>
+                                <option value="7">Julho</option>
+                                <option value="8">Agosto</option>
+                                <option value="9">Setembro</option>
+                                <option value="10">Outubro</option>
+                                <option value="11">Novembro</option>
+                                <option value="12">Dezembro</option>
+                            </select>
+                        </div>
+                        <div class='col-md-6 mb-2'>
+                            <label class='form-label' for="AnoCompetencia">Ano*</label>
+                            <select class="form-select" name="AnoCompetencia" id="AnoCompetencia">
+                                <option value="1">Selecione uma das Opções</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                            </select>
+                        </div>
+                        <!--<div class='col-md-6 mb-2'>
+                            <label class='form-label text-matrix' for="Anexo">Anexo*</label>
+                            <select class="form-select" name="Anexo" id="Anexo">
+                                <option value="" disabled selected>Selecione uma das Opções</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>-->
+                        <div class='col-md-6 mb-2'>
+                            <label class='form-label' for="ValorCompetencia">Valor*</label>
+                            <input 
+                                class='form-control' 
+                                placeholder='' 
+                                type="text" 
+                                id="ValorCompetencia" 
+                                name="ValorCompetencia" 
+                                maxlength="18"
+                                size="18"
+                                oninput="mascaraDinheiro(this);"
+                                onkeypress="mascaraDinheiro(this);"
+                                autocomplete=off 
+                            />
+                        </div>
+                        <input type='hidden' name='IdSimples'/>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn btn-orange" data-bs-dismiss="modal" onclick='updateSimples();'>Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>

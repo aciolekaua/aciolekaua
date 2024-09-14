@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo simples</title>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container-lg">
+        <div class="container-fluid">
+            <div class="transactionBoxi">
+                <div class="main-texti">
+                    <h2>Simples Nacional Consulta</h2>
+                    <div class="legend-boxi">
+                        <a href="">Mensal</a>
+                        <a href="">Semanal</a>
+                        <a href="" class="active">Hoje</a>
+                    </div>
+                    <div class="input-group-search">
+                        <input type="search" placeholder="Pesquisar na Tabela...">
+                        <!--<i class="bi bi-search"></i>-->
+                         <img src="https://ivici.com.br/public/img/CalcularSimples/DAS/search.svg" alt=""> 
+                    </div>
+        
+                    <div class="export__file" id="export__file">
+                        <div class="testeeee">
+                            <label for="export-file" class="export__file-btn" title="Export File">
+                                <img src="https://ivici.com.br/homolog/public/img/Home/folder.svg" alt="">
+                            </label>
+                        </div>
+                        <div class="export__file-options" id="export__file-options">
+                            <label>Export As <i class="bi bi-cloud-arrow-down-fill"></i></label>
+                            <label for="export-file" id="toPDF">PDF <img src="https://ivici.com.br/homolog/public/img/Home/pdf.svg" alt=""></label>
+                            <label for="export-file" id="toCSV">CSV <img src="https://ivici.com.br/homolog/public/img/Home/csv.svg" alt=""></label>
+                            <label for="export-file" id="toJSON">JSON <img src="https://ivici.com.br/homolog/public/img/Home/json.png" alt=""></label>
+                            <label for="export-file" id="toEXCEL">EXCEL <img src="https://ivici.com.br/homolog/public/img/Home/excel.svg" alt=""></label>
+                        </div>
+                    </div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                             <th class="text-thead"> Status <span class="icon-arrow">↑</span></th>
+                         <th class="text-thead">Últ. Período <span class="icon-arrow">↑</span></th>
+                         <th class="text-thead"> RBT12 <span class="icon-arrow">↑</span></th>
+                         <th class="text-thead"> DAS <span class="icon-arrow">↑</span></th>
+                         <th class="text-thead"> CNPJ | CPF <span class="icon-arrow">↑</span></th>
+                         <th class="text-thead" id="razaoSocial"> Razão social | Nome <span class="icon-arrow">↑</span></th>
+                         <!-- <th class="text-thead"> Enviado <span class="icon-arrow">↑</span></th> -->
+                         <th class="text-thead"> Ultima Busca <span class="icon-arrow">↑</span></th>
+                            <th>Ações <span class="icon-arrow"><i class="bi bi-arrow-up"></i></span></th>
+                        </tr>
+                    </thead>
+                     <tbody>
+                     <tr>
+                         <td>
+                             <p class="status delivered">Em dia</p>
+                         </td>
+                         <td class="td-periodo">
+                             <p class="periodo pending">6</p>
+                         </td> 
+                         <td>
+                             <p class="rbt12">R$ 214,645,00</p>
+                         </td> 
+                         <td class="text-matrix">
+                             <a href=""><i class="bi bi-file-earmark-arrow-down-fill"></i></a>
+                             <!-- <a href=""><i class="bi bi-arrow-counterclockwise"></i></a> -->
+                             <a href=""><i class="bi bi-person-fill-down"></i></a>
+                             
+                        </td>
+                         <td class="text-matrix"> 704.263.294-06</td>
+                         <td class="text-matrix">  wallacy Amauri... </td>
+                         <!-- <td class="baixado">
+                            <a href=""><i class="bi bi-check-circle-fill"></i></a>
+                         </td> -->
+                         <td>
+                            <p class="busca">09/08/2024</p>
+                         </td>
+                         <td>
+                            <img src="./img/view-svgrepo-com.svg" alt="" id="view">
+                            <img src="./img/calculations-calculate-svgrepo-com.svg" alt="" id="calcular">
+                            <!-- <button type="button" class="btn-visualizar">Visualizar</button> -->
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>
+                             <p class="status pending">Pendência</p>
+                         </td>
+                         <td class="td-periodo">
+                             <p class="periodo pending">6</p>
+                         </td> 
+                         <td>
+                             <p class="rbt12">R$ 136,849,00</p>
+                         </td> 
+                         <td class="text-matrix">
+                             <a href=""><i class="bi bi-file-earmark-arrow-down-fill"></i></a>
+                             <!-- <a href=""><i class="bi bi-arrow-counterclockwise"></i></a> -->
+                             <a href=""><i class="bi bi-person-fill-down"></i></a>
+                        </td>
+                         <td class="text-matrix"> 11.316.866/0001-22</td>
+                         <td class="text-matrix">  Roberto da... </td>
+                         <!-- <td class="baixado">
+                            <a href=""><i class="bi bi-x-circle-fill"></i></a>
+                         </td> -->
+                         <td>
+                            <p class="busca">09/08/2024</p>
+                         </td>
+                         <td>
+                            <img src="./img/view-svgrepo-com.svg" alt="" id="view">
+                            <img src="./img/calculations-calculate-svgrepo-com.svg" alt="" id="calcular">
+                            <!-- <button type="button" class="btn-visualizar">Visualizar</button> -->
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>
+                             <p class="status delivered">Em dia</p>
+                         </td>
+                         <td class="td-periodo">
+                             <p class="periodo pending">6</p>
+                         </td> 
+                         <td>
+                             <p class="rbt12">R$ 214,645,00</p>
+                         </td> 
+                         <td class="text-matrix">
+                             <a href=""><i class="bi bi-file-earmark-arrow-down-fill"></i></a>
+                             <!-- <a href=""><i class="bi bi-arrow-counterclockwise"></i></a> -->
+                             <a href=""><i class="bi bi-person-fill-down"></i></a>
+                        </td>
+                         <td class="text-matrix"> 704.263.294-06</td>
+                         <td class="text-matrix">  wallacy Amauri... </td>
+                         <!-- <td class="baixado">
+                            <a href=""><i class="bi bi-check-circle-fill"></i></a>
+                         </td> -->
+                         <td>
+                            <p class="busca">09/08/2024</p>
+                         </td>
+                         <td>
+                            <img src="./img/view-svgrepo-com.svg" alt="" id="view">
+                            <img src="./img/calculations-calculate-svgrepo-com.svg" alt="" id="calcular">
+                            <!-- <button type="button" class="btn-visualizar">Visualizar</button> -->
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>
+                             <p class="status pending">Pendência</p>
+                         </td>
+                         <td class="td-periodo">
+                             <p class="periodo pending">6</p>
+                         </td> 
+                         <td>
+                             <p class="rbt12">R$ 136,849,00</p>
+                         </td> 
+                         <td class="text-matrix">
+                             <a href=""><i class="bi bi-file-earmark-arrow-down-fill"></i></a>
+                             <!-- <a href=""><i class="bi bi-arrow-counterclockwise"></i></a> -->
+                             <a href=""><i class="bi bi-person-fill-down"></i></a>
+                             
+                        </td>
+                         <td class="text-matrix"> 11.316.866/0001-22</td>
+                         <td class="text-matrix">  Roberto da... </td>
+                         <!-- <td class="baixado">
+                            <a href=""><i class="bi bi-x-circle-fill"></i></a>
+                         </td> -->
+                         <td>
+                            <p class="busca">09/08/2024</p>
+                         </td>
+                         <td>
+                            <img src="./img/view-svgrepo-com.svg" alt="" id="view">
+                            <img src="./img/calculations-calculate-svgrepo-com.svg" alt="" id="calcular">
+                            <!-- <button type="button" class="btn-visualizar">Visualizar</button> -->
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>
+                             <p class="status delivered">Em dia</p>
+                         </td>
+                         <td class="td-periodo">
+                             <p class="periodo pending">6</p>
+                         </td> 
+                         <td>
+                             <p class="rbt12">R$ 214,645,00</p>
+                         </td> 
+                         <td class="text-matrix">
+                             <a href=""><i class="bi bi-file-earmark-arrow-down-fill"></i></a>
+                             <!-- <a href=""><i class="bi bi-arrow-counterclockwise"></i></a> -->
+                             <a href=""><i class="bi bi-person-fill-down"></i></a>
+                            
+                        </td>
+                         <td class="text-matrix"> 704.263.294-06</td>
+                         <td class="text-matrix">  wallacy Amauri... </td>
+                         <!-- <td class="baixado">
+                            <a href=""><i class="bi bi-check-circle-fill"></i></a>
+                         </td> -->
+                         <td>
+                            <p class="busca">09/08/2024</p>
+                         </td>
+                         <td>
+                            <img src="./img/view-svgrepo-com.svg" alt="" id="view">
+                            <img src="./img/calculations-calculate-svgrepo-com.svg" alt="" id="calcular">
+                            <!-- <button type="button" class="btn-visualizar">Visualizar</button> -->
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>
+                             <p class="status pending">Pendência</p>
+                         </td>
+                         <td class="td-periodo">
+                             <p class="periodo pending">6</p>
+                         </td> 
+                         <td>
+                             <p class="rbt12">R$ 136,849,00</p>
+                         </td> 
+                         <td class="text-matrix">
+                             <a href=""><i class="bi bi-file-earmark-arrow-down-fill"></i></a>
+                             <!-- <a href=""><i class="bi bi-arrow-counterclockwise"></i></a> -->
+                             <a href=""><i class="bi bi-person-fill-down"></i></a>
+                             
+                        </td>
+                         <td class="text-matrix"> 11.316.866/0001-22</td>
+                         <td class="text-matrix">  Roberto da... </td>
+                         <!-- <td class="baixado">
+                            <a href=""><i class="bi bi-x-circle-fill"></i></a>
+                         </td> -->
+                         <td>
+                            <p class="busca">09/08/2024</p>
+                         </td>
+                         <td>
+                            <img src="./img/view-svgrepo-com.svg" alt="" id="view">
+                            <img src="./img/calculations-calculate-svgrepo-com.svg" alt="" id="calcular">
+                            <!-- <button type="button" class="btn-visualizar">Visualizar</button> -->
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>
+                             <p class="status delivered">Em dia</p>
+                         </td>
+                         <td class="td-periodo">
+                             <p class="periodo pending">6</p>
+                         </td> 
+                         <td>
+                             <p class="rbt12">R$ 214,645,00</p>
+                         </td> 
+                         <td class="text-matrix">
+                             <a href=""><i class="bi bi-file-earmark-arrow-down-fill"></i></a>
+                             <!-- <a href=""><i class="bi bi-arrow-counterclockwise"></i></a> -->
+                             <a href=""><i class="bi bi-person-fill-down"></i></a>
+                             
+                        </td>
+                         <td class="text-matrix"> 704.263.294-06</td>
+                         <td class="text-matrix">  wallacy Amauri... </td>
+                         <!-- <td class="baixado">
+                            <a href=""><i class="bi bi-check-circle-fill"></i></a>
+                         </td> -->
+                         <td>
+                            <p class="busca">09/08/2024</p>
+                         </td>
+                         <td>
+                            <img src="./img/view-svgrepo-com.svg" alt="" id="view">
+                            <img src="./img/calculations-calculate-svgrepo-com.svg" alt="" id="calcular">
+                            <!-- <button type="button" class="btn-visualizar">Visualizar</button> -->
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>
+                             <p class="status pending">Pendência</p>
+                         </td>
+                         <td class="td-periodo">
+                             <p class="periodo pending">6</p>
+                         </td> 
+                         <td>
+                             <p class="rbt12">R$ 136,849,00</p>
+                         </td> 
+                         <td class="text-matrix">
+                             <a href=""><i class="bi bi-file-earmark-arrow-down-fill"></i></a>
+                             <!-- <a href=""><i class="bi bi-arrow-counterclockwise"></i></a> -->
+                             <a href=""><i class="bi bi-person-fill-down"></i></a>
+                
+                        </td>
+                         <td class="text-matrix"> 11.316.866/0001-22</td>
+                         <td class="text-matrix"> Roberto da...</td>
+                         <!-- <td class="baixado">
+                            <a href=""><i class="bi bi-x-circle-fill"></i></a>
+                         </td> -->
+                         <td>
+                            <p class="busca">09/08/2024</p>
+                         </td>
+                         <td>
+                            <img src="./img/view-svgrepo-com.svg" alt="" id="view">
+                            <img src="./img/calculations-calculate-svgrepo-com.svg" alt="" id="calcular">
+                            <!-- <button type="button" class="btn-visualizar">Visualizar</button> -->
+                         </td>
+                     </tr>
+                 </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

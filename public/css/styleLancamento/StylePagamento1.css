@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+/*div[class=form-group]{
+    margin-right:auto;
+    margin-left:auto;
+    width:80%;
+    margin-bottom:1%;
+}*/
+
+.modal-header{
+  outline:none;
+  border:none;
+}
+/*.btn*/
+#html5-qrcode-button-camera-permission,
+#html5-qrcode-button-camera-start,
+#html5-qrcode-button-camera-stop,
+#html5-qrcode-button-file-selection{
+  display:inline-block;
+  margin-right:auto;
+  margin-left:auto;
+  font-weight:400;
+  line-height:1.5;
+  color:#212529;
+  text-align:center;
+  text-decoration:none;
+  vertical-align:middle;
+  cursor:pointer;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  user-select:none;
+  background-color:transparent;
+  border:1px solid transparent;
+  padding:.375rem .75rem;
+  font-size:1rem;
+  border-radius:.25rem;
+  transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#html5-qrcode-button-camera-start,
+#html5-qrcode-button-camera-permission{margin-bottom:1rem;}
+
+/*.btn-primary*/
+#html5-qrcode-button-camera-permission,
+#html5-qrcode-button-camera-start,
+#html5-qrcode-button-file-selection{color:#fff;background-color:#0d6efd;border-color:#0d6efd;}
+
+/*.btn-danger*/
+#html5-qrcode-button-camera-stop{color:#fff;background-color:#dc3545;border-color:#dc3545}
+
+/*.form-select*/
+#html5-qrcode-select-camera{
+  display:block;
+  margin-right:auto;
+  margin-left:auto;
+  margin-bottom:0.5rem;
+  margin-top:0.25rem;
+  width:90%;
+  padding:.375rem 2.25rem .375rem .75rem;
+  -moz-padding-start:calc(0.75rem - 3px);
+  font-size:1rem;
+  font-weight:400;
+  line-height:1.5;
+  color:#212529;
+  background-color:#fff;
+  background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat:no-repeat;
+  background-position:right .75rem center;
+  background-size:16px 12px;
+  border:1px solid #ced4da;
+  border-radius:.25rem;
+  transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none
+}
+
+.form-select:focus{
+    border-color:#ff0844;
+    box-shadow: 0 0 0 0.25rem rgba(255,8,68,.25);
+}
+.form-control:focus{
+    border-color:#ff0844;
+    box-shadow: 0 0 0 0.25rem rgba(255,8,68,.25);
+}
+.form-check-input:checked {
+    background-color: #ff0844;
+    border-color: #ff0844;
+}
+.form-check-input:focus{
+    box-shadow: 0 0 0 0.25rem rgba(255,8,68,.25);
+}
+
+/*input inicio*/
+.form__group {
+  position: relative;
+  padding: 20px 0 0;
+  width: 100%;
+  max-width: 180px;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #6b6b6b;
+  outline: 0;
+  font-size: 17px;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 17px;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: var(--color);
+  pointer-events: none;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #f88985, #e73635);
+  border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #f88985;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+/*input fim*/
+div#mensage{right: 0; bottom: 0; margin:0 1% 1% 0;}
+
+div#mensage div.alert{margin:auto;}
+
+@media only screen and (max-width:920px){
+    /*div[class=form-group]{
+        width:90%;
+        margin-bottom:3%;
+    }*/
+}

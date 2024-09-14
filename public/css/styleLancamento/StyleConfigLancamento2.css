@@ -1,0 +1,47 @@
+.tabela {
+    background-color: var(--bg-color-body);
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.grid-boxin{
+    position: relative;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+.boxin-skills{
+    display: flex;
+    margin: 0 auto;
+}
+.boxin-skills .boxin-card{
+    width: 100%;
+    margin: 10px;
+    background: var(--bg-color-body);
+    text-align: center;
+    border-radius: 20px;
+    padding: 16px 90px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.boxin-skills .boxin-card h3{
+    margin: 10px;
+    text-transform: capitalize;
+}
+.boxin-skills .boxin-card p{
+    font-size: 18px;
+}
+.boxin-skills .boxin-card button{
+    background: orangered;
+    /*color: va;*/
+    padding: 7px 15px;
+    border-radius: 10px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.boxin-skills .boxin-card button{
+    background: rgba(223, 70, 15, 0.856);
+}
+.boxin-skills .boxin-card i{
+    font-size: 22px;
+    padding: 10px;
+}

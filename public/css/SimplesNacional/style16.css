@@ -1,0 +1,152 @@
+:root {
+    --main-color-1:rgb(0, 202, 199);
+    --orange-color:#ffc15e;
+    --colo-primary:#8158fc;
+    --colo-red:#FF0000;
+    --colo-primary-card:rgba(129, 88, 252, 0.7);
+    --font-color:#afb7bf;
+    --green-color:#2fa52d;
+    --nav-after:rgb(129 88 252);
+    --nav-after-color:rgb(239 239 239);
+}
+.containeri{
+    grid-template-columns:14rem auto;
+}
+.righti{
+    display:none;
+}
+.container-details{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 1.3rem;
+}
+
+.contenti{
+    background: var(--white-color);
+    border-radius: 10px;
+    padding: 1rem;
+    width:100%;
+    height: 22rem;
+}
+
+.incomei, .outcomei{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 1rem .4rem 0rem;
+    border-bottom: 1px solid rgba(129, 88, 252, 0.1);
+}
+
+.left-contenti{
+    display:flex ;
+    align-items :center ;
+    gap: .7rem;
+}
+
+.badgei i{
+    display: inline-flex;
+    rotate: 0deg !important;
+    color: var(--colo-primary);
+    font-size: 4.4rem;
+}
+.badgei.rbt12info i{
+    color: var(--colo-red) !important;
+}
+.badgei.faturamento-info i{
+    color: var(--orange-color) !important;
+}
+.text-orange{
+    color: #ff9d00 !important;
+}
+.content-colo{
+    color: var(--colo-primary) !important;
+}
+.text-azul{
+    color:var(--main-color-1) !important;
+}
+.text-azul i{
+    color:var(--main-color-1) !important;
+}
+.outcomei .badgei i{
+    color: var(--green-color);
+    /*rotate: 90deg;*/
+}
+
+.right-contenti{
+    text-align: center;
+}
+
+.right-contenti i{
+    font-size: 2rem;
+}
+.right-contenti span{
+    color: #6c757d;
+}
+
+.incomei .topi{
+    color: var(--red-color);
+}
+
+.topi p{
+    margin: -5px 0;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.right-contenti span .infoi span{
+    color: var(--font-color);
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+
+.outcomei .topi{
+    color: var(--green-color);
+}
+
+#myChartLimite{
+    width: 30rem !important;
+    height: 20rem !important;
+}
+@media(max-width:1530px){
+    .container-details{
+        grid-gap: 0.5rem;
+        /*grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));*/
+        margin-top: 0;
+        justify-items: center;
+    }
+    .datails-boxi{
+        margin-top:0;
+        width:100%;
+    }
+}
+@media screen and (max-width:1200px){
+    .limite_chart{
+        width: 24rem;
+        margin: 0 10rem;
+    }
+}
+
+@media screen and (max-width:768px){
+    .chartBoxi, .transactionBoxi, .formularioi{
+        overflow: overlay;
+    }
+}
+@media screen and (max-width:570px){
+    .transactionBoxi .legend-boxi a{
+        padding: .5rem .5rem;
+    }
+    .container-details {
+        justify-items: start;
+    }
+    .contenti {
+        width: 70%;
+    }
+    .limite_chart{
+        margin: 0;
+    }
+    .card-infoi {
+        width: 70%;
+    }
+}

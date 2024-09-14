@@ -1,0 +1,33 @@
+.form-select:focus{
+    border-color:#ff0844;
+    box-shadow: 0 0 0 0.25rem rgba(255,8,68,.25);
+}
+.form-control:focus{
+    border-color:#ff0844;
+    box-shadow: 0 0 0 0.25rem rgba(255,8,68,.25);
+}
+.form-check-input:checked {
+    background-color: #ff0844;
+    border-color: #ff0844;
+}
+.form-check-input:focus{
+    box-shadow: 0 0 0 0.25rem rgba(255,8,68,.25);
+}
+.card-header{
+    color:#fff9f5;
+}
+.card-header i{
+    color:#fff9f5;
+}
+
+.lista-servicos{
+    padding-bottom:8px;
+}
+form div[class=form-group]{
+    width:60%;
+    margin-left:auto;
+    margin-right:auto;
+}
+/*form{*/
+/*    box-shadow:0 0 15px #999;*/
+/*}*/

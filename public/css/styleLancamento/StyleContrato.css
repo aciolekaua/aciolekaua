@@ -1,0 +1,12 @@
+div[class=form-group]{
+    margin-right:auto;
+    margin-left:auto;
+    width:80%;
+    margin-bottom:1%;
+}
+@media only screen and (max-width:920px){
+    div[class=form-group]{
+        width:90%;
+        margin-bottom:3%;
+    }
+}

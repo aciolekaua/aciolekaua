@@ -1,0 +1,355 @@
+.container{
+    background-image: url('../../img/_svg/wrench.svg');
+    display: flex;
+    padding-bottom: 30px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+}
+.content{
+    top: 36%;
+    position: absolute;
+    transform: translateY(-45%);
+}
+.launch-time{
+    display: flex;
+}
+.launch-time div{
+    flex-basis: 100px;
+    margin: 14px;
+}
+.launch-time div p{
+    font-size: 60px;
+    margin-bottom: -14px;
+}
+#time{
+    display: flex;
+    gap: 30px;
+    margin: 0.8rem;
+}
+#time .circle{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#time .circle svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+#time .circle svg circle{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 8;
+    stroke: #282828;
+    stroke-linecap: round;
+    transform: translate(5px,5px);
+}
+
+#time .circle svg circle:nth-child(2){
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+#time div{
+    position: absolute;
+    text-align: center;
+    font-weight: 500;
+    color: #f88985;
+    font-size: 1.5em;
+}
+#time div span{
+    position:absolute ;
+    transform: translateX(-50%) translateY(0);
+    font-size: 0.35em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+#time .dots{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+#time .dots::before{
+    content: '';
+    position: absolute;
+    top: -3px;
+    width: 15px;
+    height: 15px;
+    background:var(--clr);
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
+}
+#center{
+    margin-top: 25vh;
+    text-align: center;
+}
+.center{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.8rem;
+}
+
+.center h2{
+    font-size: 1.5rem;
+}
+.newYear{
+    font-size: 3em;
+    font-weight: 200;
+    text-align: center;
+    justify-content: center;
+    line-height: 1.6em;
+    display: none;
+}
+.newYear span{
+    display: flex;
+    justify-content: center;
+    font-size: 0.5em;
+    font-weight: 300;
+}
+.share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1em;
+    transition: .4s ease-in-out;
+    margin-top: 10px;
+}
+
+.btn1 {
+    position: relative;
+    width: 3em;
+    height: 3em;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    transition: .4s all;
+}
+
+.btn1 .instagram {
+    margin-top: 0.1em;
+    fill: #cc39a4;
+}
+
+.btn1 .tooltiptext1 {
+    visibility: hidden;
+    width: 6em;
+    height: 8em;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+    position: absolute;
+    left: -1.5em;
+    top: -8em;
+    z-index: 1;
+    transition: .1s ease-in-out;
+}
+
+.btn1 .tooltiptext1 .card {
+    width: 4em;
+    height: 4em;
+    background-color: white;
+}
+
+.btn1 .tooltiptext1 .account {
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.btn1 .tooltiptext1 .username {
+    font-size: 0.7em;
+    margin-top: 1.6em;
+    font-weight: bold;
+}
+
+.btn1:hover .tooltiptext1 {
+    transform: translateY(-1em);
+    visibility: visible;
+}
+
+.btn1:hover {
+    background-color: #cc39a4;
+}
+
+.btn1:hover .instagram {
+    fill: white;
+}
+
+.btn2 {
+    position: relative;
+    width: 3em;
+    height: 3em;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    transition: .4s all;
+}
+
+.btn2 .twitter {
+    margin-top: .25em;
+    margin-left: .1em;
+    fill: #03A9F4;
+}
+
+.btn2 .tooltiptext2 {
+    visibility: hidden;
+    width: 6em;
+    height: 8em;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+    position: absolute;
+    left: -1.5em;
+    top: -8em;
+    z-index: 1;
+    transition: .1s ease-in-out;
+}
+
+.btn2 .tooltiptext2 .card {
+    width: 4em;
+    height: 4em;
+    background-color: white;
+}
+
+.btn2 .tooltiptext2 .account {
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.btn2 .tooltiptext2 .username {
+    font-size: 0.6em;
+    margin-top: 1.6em;
+    font-weight: bold;
+}
+
+.btn2:hover .tooltiptext2 {
+    transform: translateY(-1em);
+    visibility: visible;
+}
+
+.btn2:hover {
+    background-color: #03A9F4;
+}
+
+.btn2:hover .twitter {
+    fill: white;
+}
+
+.btn3 {
+    position: relative;
+    width: 3em;
+    height: 3em;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    transition: .4s all;
+}
+
+.btn3 .tooltiptext3 {
+    visibility: hidden;
+    width: 6em;
+    height: 8em;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+    position: absolute;
+    left: -1.5em;
+    top: -8em;
+    z-index: 1;
+    transition: .1s ease-in-out;
+}
+
+.btn3 .tooltiptext3 .card {
+    width: 4em;
+    height: 4em;
+    background-color: white;
+}
+
+.btn3 .tooltiptext3 .account {
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.btn3 .tooltiptext3 .username {
+    font-size: 0.7em;
+    margin-top: 1.6em;
+    font-weight: bold;
+}
+
+.btn3:hover .tooltiptext3 {
+    transform: translateY(-1em);
+    visibility: visible;
+}
+
+.btn3:hover {
+    background-color: black;
+}
+
+.btn3:hover .git {
+    fill: white;
+}
+/*====================*/
+.rockets{
+    width:200px;
+    position:absolute;
+    right:0%;
+    bottom:0;
+    animation: rocket 4s linear infinite;
+}
+.rocket{
+    width:200px;
+    position:absolute;
+    right:66%;
+    bottom:0;
+    animation: rocket 4s linear infinite;
+}
+
+@keyframes rocket{
+    0%{
+        bottom:0;
+        opacity:0;
+    }
+    100%{
+        bottom:105%;
+        opacity:1;
+    }
+}
+/*====================*/
+@media screen and (max-width:800px){
+    #time{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap:25px;
+        margin:30px 0 0 0;
+    }
+}
+@media screen and (max-width:380px){
+    #time{
+        grid-template-columns: 1fr;
+        grid-gap:5px;
+    }
+}

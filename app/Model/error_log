@@ -1,0 +1,8 @@
+[31-Jul-2023 10:08:49 America/Fortaleza] PHP Fatal error:  Uncaught Error: Class "App\Model\ClassCrud" not found in /home2/elaico09/public_html/cash/app/Model/ClassConciliador.php:5
+Stack trace:
+#0 {main}
+  thrown in /home2/elaico09/public_html/cash/app/Model/ClassConciliador.php on line 5
+[31-Jul-2023 10:08:54 America/Fortaleza] PHP Fatal error:  Uncaught Error: Class "App\Model\ClassCrud" not found in /home2/elaico09/public_html/cash/app/Model/ClassConciliador.php:5
+Stack trace:
+#0 {main}
+  thrown in /home2/elaico09/public_html/cash/app/Model/ClassConciliador.php on line 5

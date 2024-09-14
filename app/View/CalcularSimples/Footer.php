@@ -1,0 +1,1 @@
+<script src="<?php echo(DIRJS."CalcularSimples/script69.js"); ?>"></script>

@@ -1,0 +1,353 @@
+       /* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+ 
+  :root {
+  --primary-color: rgb(11, 78, 179);
+}
+
+.container{
+    position: relative;
+    max-width: 1070px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        z-index: 0;
+}
+/*progress bar*/
+.progressbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  counter-reset: step;
+  margin: 2rem 1rem 4rem 0.6rem;
+}
+
+.progressbar::before,
+.progress {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  background-color: #dcdcdc;
+  z-index: -1;
+}
+
+.progress {
+  background-color: var(--primary-color);
+  width: 0%;
+  transition: 0.3s;
+}
+
+.progress-step {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  background-color: #dcdcdc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-step::before {
+  counter-increment: step;
+  content: counter(step);
+}
+
+.progress-step::after {
+  content: attr(data-title);
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.progress-step-active {
+  background-color: var(--primary-color);
+  color: #f3f3f3;
+}
+.container header{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+.container header::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: #4070f4;
+}
+.container form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: #fff;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.container form .form{
+    position: absolute;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+/*.container form .form.second{*/
+/*    opacity: 0;*/
+/*    pointer-events: none;*/
+/*    transform: translateX(100%);*/
+/*}*/
+.select-menu{
+    /*width: 264px;*/
+    width: calc(100% / 3 - 15px);
+    margin-top: -8px;
+}
+.select-menu .select-btn{
+    display: flex;
+    height: 42px;
+    background: #fff;
+    padding: 20px;
+    font-size: 12px;
+    /*font-weight: 400;*/
+    border-radius: 5px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    border: 1px solid #aaa;
+}
+.select-btn i{
+    font-size: 25px;
+    transition: 0.3s;
+}
+.select-menu.active .select-btn i{
+    transform: rotate(-180deg);
+}
+.select-menu .options{
+    position: absolute;
+    width: 50%;
+    margin-top: 10px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    display: none;
+}
+.select-menu.active .options{
+    display: block;
+}
+.options .option{
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #fff;
+}
+.options .option:hover{
+    background: #F2F2F2;
+}
+.option i{
+    font-size: 25px;
+    margin-right: 12px;
+}
+.option .option-text{
+    font-size: 18px;
+    color: #333;
+}
+
+@keyframes animate {
+  from {
+    transform: scale(1, 0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+.payment-method{
+display: flex;
+align-items: center;
+gap: 20px;
+margin-bottom: 16px;
+}
+.payment-method .method{
+border: 1px solid hsl(0,0%,64%);
+background-color:hsl(0,0%,64%);
+border-radius: 5px;
+width: 50%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 15px 30px;
+gap: 20px;
+cursor: pointer;
+}
+.payment-method .selected{ border-color: var(--azure); }
+
+.payment-method .method i { font-size: 20px; }
+
+.payment-method .method .bi-check-circle{
+/* margin-left: auto; */
+color: hsl(0,0%,64%);
+
+}
+
+.payment-method .method .bi-check-circle-fill{ color: var(--azure);}
+
+.payment-form input{
+padding: 10px 15px;
+font-size: var(--fs-18);
+font-weight: var(--fw-5);
+}
+
+/* Form */
+
+.form-step {
+  display: none;
+  transform-origin: top;
+  animation: animate 0.5s;
+}
+
+.form-step-active {
+  display: block;
+}
+
+.container form .title{
+        display: block;
+    margin-bottom: 8px;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 6px 0;
+    color: #1a1a1a;
+}
+.container form .title span{
+    font-weight: 400;
+    font-size: 16px;
+}
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .fields .input-field{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+form .fields .radio-field{
+    width: calc(100% / 3 - 15px);
+    margin: 4px 0;
+}
+form .fields .input-field2{
+    display: flex;
+    width: calc(100% / 2 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+.input-field, .input-field2, .select-menu label{
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+.input-field input, .input-field2 input, select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+        padding: 8px 10px;
+    height: 42px;
+    margin: 8px 0;
+}
+.input-field input :focus,
+.input-field select:focus,
+.input-field2 input :focus,
+.input-field2 select:focus{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+.input-field select,
+.input-field input[type="date"],
+.input-field2 select,
+.input-field2 input[type="date"]{
+    color: #707070;
+}
+.input-field input[type="date"]:valid,
+.input-field input[type="date"]:valid{
+    color: #333;
+}
+.container form button, .btn-prev{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color: #4070f4;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.btn-remove{
+    background: #ff2d2d !important;
+}
+.btn-remove:hover{
+    background: #f84949 !important;
+}
+.container form .btnText{
+    font-size: 14px;
+    font-weight: 400;
+}
+form button:hover{
+    background-color: #265df2;
+}
+form button i,
+form .btn-prev i{
+    margin: 0 6px;
+}
+form .btn-prev i{
+    transform: rotate(180deg);
+}
+form .buttons{
+    display: flex;
+    align-items: center;
+}
+form .buttons button , .btn-prev{
+    margin-right: 14px;
+}
+
+@media (max-width: 750px) {
+    .container form{
+        overflow-y: scroll;
+    }
+    .container form::-webkit-scrollbar{
+       display: none;
+    }
+    form .fields .input-field, .select-menu{
+        width: calc(100% / 2 - 15px);
+    }
+}
+
+@media (max-width: 550px) {
+    form .fields .input-field, .input-field2, .select-menu{
+        width: 100% !important;
+    }
+    .select-menu .options{
+        width:100%;
+    }
+}

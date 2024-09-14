@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/*----------tema do site----------*/
+
+:root{
+    --hue-1: 214;
+    --hue-2: 214;
+    --main-color-1:hsl(355, 77%, 52%);
+    --main-color-dark-1:hsl(var(--hue-1), 89%, 70%);
+    --main-color-2: hsl(var(--hue-2), 76%, 72%);
+    --main-color-dark-2:hsl(var(--hue-2), 82%, 55%);
+    --section-padding:7rem;
+}   
+
+body{
+    --bg-color-body:#EBEFF3;
+    --bg-color: hsl(0, 100%, 97%);
+    --bg-color-1:#F9F9F9;
+    /*cor do icon*/
+    --bg-color-2: linear-gradient(180deg, hsla(24, 61%, 20%, 1) 0%, hsla(32, 47%, 59%, 1) 40%);
+    --bg-color-3:#fff;
+    --bg-color-4:#707070;
+    --bg-color-transparent:rgba(255,255,255,0.6);
+    --heading-color: hsl(var(--hue-1),100%,51%);
+    --text-color:hsl(var(--hue-1),17%,63%);
+  
+}
+body.dark{
+    --bg-color-body: rgb(209,209,209);
+    --bg-color: hsl(0, 100%, 97%);
+    --bg-color-1:#fff;
+    --bg-color-2: linear-gradient(180deg, hsla(56, 91%, 65%, 1) 0%, hsla(56, 87%, 59%, 1) 40%);;
+    --bg-color-3:#F9F9F9;
+    --bg-color-4:#aaaaaa;
+    --bg-color-transparent:hsl(151, 27%, 66%);
+    --heading-color: hsl(var(--hue-1),100%,65%);
+    --text-color:hsl(var(--hue-1),78%,61%);    
+ 
+}
+body.dark .st1{
+    fill:hsl(var(--hue-1),18%,29%);
+}
+body.dark .shape.square{
+    opacity:0.07;
+}
+
+body.dark .toggle-btn:hover{
+    background-color:brightness(110%);
+}
+
+body.dark .nav-link:hover::after,
+body.dark .nav-link.active::after {
+    opacity:0.6;
+}
+
+body.dark .form-input:hover {
+    filter:brightness(110%);   
+}
+/*----------estilo geral----------*/
+
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+    
+}
+
+body{
+    overflow-x: hidden;
+    background-color:var(--bg-color-body);
+    /*background-color:#EBEFF3 ;*/
+    font-family: "Poppins", sans-serif;
+    transition: 0.3s background-color;
+    
+}
+::selection{
+    background-color: hsl(var(--hue-1), 100%, 60%,0.9);
+    color: #fff;
+}
+a{
+    text-decoration: none;
+}
+/*-----------reutilizável CSS code----------- */
+
+.container{
+    position: relative;
+    background:linear-gradient(180deg, hsla(36, 91%, 65%, 1) 0%, hsla(36, 87%, 59%, 1) 40%);
+    width: 100%;
+    max-width: 150rem;
+    padding: 0 0.5rem;
+    margin: 0 auto;
+    height: 4.4rem;
+}
+
+.logo{
+    margin-right: 1.5rem;
+    font-family: "Abril Fatface",cursive;
+    font-size: 1.5rem;
+    color: var(--heading-color);
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+img{
+    width:74px;
+    height:74px;
+    align-items:center;
+}
+.logo span{
+    color:var(--main-color-1);
+}
+/*-----------Navbar styling----------- */
+
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    transition: 0.3s;
+}
+nav.container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .logo{
+    height: 75px;
+    line-height: 75px;
+}
+header nav{
+    justify-content: space-between;
+}
+.toggle-btn{
+    color:var(--heading-color);
+    min-width:40px;
+    height: 40px;
+    background-color: var(--bg-color-2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    /*margin-right: -6.5rem;*/
+}
+
+.toggle-btn:hover {
+    filter: brightness(97%);
+}
+
+.form_container{
+    position: absolute;
+    max-width: 440px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+    background: var(--bg-color-1);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.form_container h2{
+    font-size: 22px;
+    color: #0b0217;
+    text-align: center;
+}
+/*label {*/
+/*    display: inline-block;*/
+/*    cursor: pointer;*/
+/*    position: relative;*/
+/*    padding-left: 25px;*/
+/*    margin-right: 15px;*/
+/*    font-size: 13px;*/
+/*}*/
+
+/* Escondemos o radio original */
+/*input[type=radio] {*/
+/*    display: none;*/
+/*}*/
+
+/* Usamos o pseudo-element :before para recriar o novo radio */
+/*label:before {*/
+/*    content: "";*/
+/*    display: inline-block;*/
+ 
+/*    width: 16px;*/
+/*    height: 16px;*/
+  
+/*    border-radius:50%;*/
+ 
+/*    margin-right: 10px;*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    bottom: 1px;*/
+/*    background-color: var(--bg-color-4);*/
+/*    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);*/
+/*}*/
+
+/* CSS Responsavel por definir o estilo para radio Checkado */
+/*input[type=radio]:checked + label:before {*/
+/*    content: "\2022";*/
+/*    color: #ff0844;*/
+/*    font-size: 30px;*/
+/*    text-align: center;*/
+/*    line-height: 16px;*/
+/*}*/
+.form-check-input{
+    background-color:var(--bg-color-4);
+}
+.form-check-input:checked {
+    background-color: #ff0844;
+    border-color: #ff0844;
+}
+.form-check-input:focus{
+    box-shadow: 0 0 0 0.25rem rgba(255,8,68,.25);
+}
+option {
+    background-color:#ff0844;
+}
+.input_box{
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+}
+.input_box input{
+    height: 100%;
+    width: 100%;
+    background-color:var(--bg-color-3) ;
+    border: none;
+    outline: none;
+    padding: 0 30px;
+    color: #333;
+    transition: all 0.2s ease;
+    border-bottom: 1.5px solid #aaaaaa;
+}
+.input_box input:focus{
+    border-color: #ff0844 ;
+}
+.input_box i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: var(--bg-color-4);
+}
+.input_box i.email{
+    left: 0;
+}
+.input_box input:focus ~ i.email{
+    color: #ff0844 ;
+}
+.check-input:checked{
+    background: #ff0844;
+}
+
+.input_box i.fa-eye-slash{
+    right: 0;
+    font-size: 18px;
+}
+/*#esqueceu{*/
+/*    color:#c00000;*/
+/*}*/
+.btn-laranja{
+    background-color: #ff0844;
+    color:#fff;
+    padding:5px 8px;
+    border:1px solid #ff0844;
+    border-radius:4px;
+    cursor:pointer;
+    font-size:15px;
+    transition:all .3s ease;
+}
+.btn-laranja:hover{
+    background-color: #fff;
+    color:blue;
+}
+#divMensage{width:50%; text-align:center;}
+@media screen and (max-width:920px){
+    #divMensage{width:80%;}
+    form{width:80%;}
+    .logo{font-size: 1.45rem;}
+    
+    header .logo{
+        height: 75px;
+        line-height: 75px;
+    }
+}
+@media (max-width:768px) {
+    :root {
+        --section-padding:3.5rem;
+    }
+    header{
+        height:505px;
+        max-height:100px;
+        overflow:hidden;
+    }
+    .toggle-btn{
+    margin:0;
+    }
+}
+@media (max-width:500px) {
+    .container{
+        padding:0 2px;
+    }
+    .logo{
+        margin-right:0;
+    }
+    img{
+    width:60px;
+    height:60px;
+}
+    .container h4{
+        font-size:1.2rem;
+    }
+}
+#formRecuperaSenha2{
+    display:none;
+}
