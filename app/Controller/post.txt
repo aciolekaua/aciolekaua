@@ -1,0 +1,2 @@
+26/02/2024 14:18:45 - {"dados":{"atividades":"6920601","valorservico":"495","serierps":"1","localservico":"1","incentivadorcultural":"2","iss":"5","cpfcnpjtomador":"35676951000160","escolhaopj":"11316866000122","datacompetencia":"26\/02\/2024","descricao":"SERVIÇO DE CONTABILIDADE","naturezaoperacao":"6","nrps":"276","servico":"17.18","ceptomador":"52040350","nometomador":"IMGL"},"erro":[],"sucesso":["Nota emitida"]}
+

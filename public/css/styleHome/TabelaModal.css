@@ -1,0 +1,31 @@
+/*#tabelaModal2, #tabelaModal1{
+    height:80%;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+#tabelaModal2 *, #tabelaModal1 *{
+    border:1px solid #888;
+    text-align:center;
+}
+
+#tabelaModal2 th, #tabelaModal1 th{
+    background:#666;
+    color:#eee;
+}
+
+*/
+
+#tabelaReceita *, #tabelaDespesa *{
+    /*text-align:center;*/
+}
+#tabelaReceita th{
+    /*font-weight: bold;
+    background:#666;
+    color:#fff;*/
+}
+#tabelaDespesa th{
+    /*font-weight: bold;
+    background:#666;
+    color:#fff;*/
+}

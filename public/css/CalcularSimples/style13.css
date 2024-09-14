@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+html{
+  width: 100%;
+  height: auto;
+}
+body{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #cdceff;
+  position: relative;
+}
+body::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: #696cff;
+  clip-path: polygon(86% 0, 100% 0, 100% 100%, 60% 100%);
+}
+.container{
+  z-index: 12;
+  max-width: 1060px;
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  margin: 0 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 20px;
+}
+.content .image-box{
+  max-width: 75%;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 1rem;
+}
+.content .image-box img{
+  width: 75%;
+}
+.content .topic{
+  font-size: 22px;
+  font-weight: 500;
+  color: #696cff;
+}
+.content form{
+  width: 100%;
+  margin-right: 30px;
+}
+.content .input-box{
+  height: 50px;
+  width: 95%;
+  margin: 16px 8px;
+  position: relative;
+}
+ .content .input-box .button{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  padding-left: 16px;
+  background: #cddeff;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  margin-top: 0.6rem;
+}
+
+.page-form-content {
+    width: 100%;
+    padding: 0 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    flex-direction: column;
+    width: 100%;
+}
+
+.text-fields{
+  padding: 0.8%;
+  margin: 1.2% 2%;
+  width: 100%;
+}
+
+.text-fieldsV{
+  width: 95%;
+}
+
+.text-fieldsV .form-input{
+  margin-left: 0.6rem;
+}
+
+label{
+    color: #1a1d86;
+    font-weight: 600;
+    margin-left: 3.4%;
+    margin-bottom: 1%;
+}
+.form-input{
+    display:inline-block;
+    padding:0.9rem 1.5rem;
+    background: #f5f5f9;
+    border: 2px solid #f5f5f9;
+    width:100%;
+    border-radius:17px;
+    font-family:inherit;
+    font-size:0.85rem;
+    font-weight:500;
+    color:#2e31bf;
+    outline:none;
+    transition:0.3s;
+    margin-top: 0.4%;
+}
+.form-input::placeholder{
+    color: #2e31bf;    
+}
+
+.form-input:hover{
+    filter:brightness(95%);
+}
+
+/*.content .input-box input:focus,
+.content .input-box input:valid{
+  border-color: #1a1d86;
+  background-color: #fff;
+}
+.content .input-box label{
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  color: #636c72;
+  font-size: 15px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+.content .input-box input:focus ~ label,
+.content .input-box input:valid ~ label{
+  top: 0;
+  left: 12px;
+  display: 14px;
+  color: #696cff;
+  background: #fff;
+}
+.content .message-box{
+  min-height: 100px;
+  position: relative;
+}
+.content .message-box textarea{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  resize: none;
+  background: #fae9fb;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  outline: none;
+  transition all 0.3s ease;
+}
+.content .message-box textarea:focus{
+  border-color: #696cff;
+  background-color: #fff;
+}
+.content .message-box label{
+  position: absolute;
+  font-size: 16px;
+  color: #636c72;
+  left: 18px;
+  top: 6px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.content .message-box textarea:focus ~ label{
+  left: 12px;
+  top: -10px;
+  color: #696cff;
+  font-size: 14px;
+  background: #fff;
+} */
+.content .input-box input[type="submit"]{
+  color: #fff;
+  background: #1a1d86;
+  padding-left: 0;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+.content .input-box input[type="submit"]:hover{
+  background-color: #5053ff;
+  border-color:#5053ff
+}
+@media (max-width:1000px) {
+  .content .image-box{
+    max-width: 70%;
+  }
+  .content{
+    padding: 10px 0;
+  }
+}
+@media (max-width:900px) {
+  .content .image-box{
+    display: none;
+  }
+  .content form{
+    width: 100%;
+    margin-left: 30px;
+  }
+}
+
+
+.container_table{
+    z-index: 12;
+    max-width: 1200px;
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    margin: 0 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.container_table .content_table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 20px;
+}
+.heading {
+    display: flex;
+    background-color: #36485f;
+    box-shadow: 0px 1px 2px #36485f;
+}
+h1 {
+    color: #696cff;
+    font-weight: bold;
+    
+    background: transparent;
+    padding: 7px;
+  
+}
+
+
+.outer-wrapper {
+    /* margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px; */
+    /* border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9); */
+    max-width: fit-content;
+    max-height: fit-content;
+
+    
+}
+.table-wrapper {
+
+    overflow-y: scroll;
+    overflow-x: scroll;
+    height: fit-content;
+    max-height: 66.4vh;
+    
+    margin-top: 22px;
+    
+    margin: 15px;
+    padding-bottom: 20px;
+    
+}
+
+.table-wrapper h1{
+    display: flex;
+    justify-content: center;
+}
+table {
+    
+    /* min-width: max-content; */
+    
+    border-collapse: separate;
+    border-spacing: 0px;
+    width: 100%;    
+    
+}
+
+.table-filter {
+    border-radius: 5px;
+}
+
+table th{
+    position:initial; 
+    top: 0px;
+    
+    background-color:   #265679;
+    color: rgb(0 253 255);
+    
+    text-align: center;
+    font-weight: normal;
+    font-size: 18px;
+    outline: 0.7px solid #36485f;
+    border: 1.5px solid #36485f;
+
+} 
+
+
+
+table th, table td {
+    
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+table td {
+    text-align: left;
+    
+    font-size: 15px;
+    border: 1px solid rgb(177, 177, 177);
+    padding-left: 20px;
+    
+}
+table tfoot{
+    border: 3px solid aliceblue;
+    background-color: aliceblue;
+    color: blue;
+}
+.radio-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  
+  .radio-container input[type="radio"] {
+    float: left;
+    margin-right: 10px;
+  }
+  
+  .radio-container label {
+    cursor: pointer;
+    display: block;
+    margin-bottom: 10px;
+  }

@@ -1,0 +1,4 @@
+#BUILDER-START#
+# Enable rewriting.
+Options -Indexes
+#BUILDER-END#

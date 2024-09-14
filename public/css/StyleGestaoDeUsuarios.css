@@ -1,0 +1,73 @@
+.nav-link{
+    color:white;
+}
+.nav-tabs .nav-link:hover{
+    color:white;
+    border:1px solid #c1c0c0;
+    background:#c1c0c0;
+}
+.nav-tabs .nav-link.active{
+    font-weight: bold;
+    color:black;
+}
+.nav-tabs .nav-link.active:hover{
+    font-weight: bold;
+    color:black;
+    border:1px solid #fff;
+    background:#fff;
+}
+/*form{*/
+/*    background:rgba(199,199,199,0.1754738);*/
+/*}*/
+.form-control-sm:focus{
+    border-color: #e73635;
+    box-shadow: 0 0 0 0.2rem rgba(248,137,133,0.5214460784313726);
+}
+.form-select:focus{
+    border-color:#ff0844;
+    box-shadow: 0 0 0 0.25rem rgba(255,8,68,.25);
+}
+.form-control:focus{
+    border-color:#ff0844;
+    box-shadow: 0 0 0 0.25rem rgba(255,8,68,.25);
+}
+.form-check-input:checked {
+    background-color: #ff0844;
+    border-color: #ff0844;
+}
+.form-check-input:focus{
+    box-shadow: 0 0 0 0.25rem rgba(255,8,68,.25);
+}
+.page-link{
+    color:#ff0844;
+}
+.page-link:hover{
+    color:#ff0844;
+}
+.page-link:focus{
+     border-color: #e73635;
+        box-shadow: 0 0 0 0.2rem rgba(248,137,133,0.5214460784313726);
+}
+.page-item.active .page-link{
+    background-color: #ff0844;
+    border-color: #ff0844;
+}
+#formPF_PJ{
+    width:98%;
+}
+.juntar-card{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap:0.4rem;
+}
+#formConselho{
+    padding:2.6rem 3rem 1rem 3rem;
+}
+#formRegistrar{
+    padding:1.9rem 3rem 1rem 3rem;
+}
+@media only screen and (max-width:610px){
+    .juntar-card{
+        grid-template-columns: 1fr;
+    }
+}

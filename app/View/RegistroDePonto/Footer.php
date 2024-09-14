@@ -1,0 +1,1 @@
+<script src="<?php echo(DIRJS."RegistroDePonto/script.js"); ?>"></script>

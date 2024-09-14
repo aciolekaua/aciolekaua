@@ -1,0 +1,17 @@
+{
+    "name": "cash/cash",
+    "description": "Projeto inicial do produto ivici",
+    "autoload": {
+        "psr-4": {
+            "App\\":"../app/",
+            "Src\\":"../src/"
+        }
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.8",
+        "dompdf/dompdf": "^2.0",
+        "google/apiclient": "^2.15",
+        "guzzlehttp/guzzle": "^7.8",
+        "smalot/pdfparser": "^2.10"
+    }
+}

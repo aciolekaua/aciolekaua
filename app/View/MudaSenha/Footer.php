@@ -1,0 +1,1 @@
+<script src="<?php echo(DIRJS."MudarSenha/script.js");?>"></script>

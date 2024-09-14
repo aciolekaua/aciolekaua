@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins";
+}
+
+.page_404 {
+    padding:40px 0;
+    background:#fff;
+}
+
+#bg-error {
+    height: 400px;
+    width: 300px;
+    background-position:center;
+    
+}
+
+h1 {
+    font-size:80px;
+}
+
+h3{
+    font-size:80px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #39ac31;
+}

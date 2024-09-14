@@ -1,0 +1,4 @@
+11/01/2024 18:32:14 - {"dados":{"senhaCertificado":"Soltec000"},"arquivos":{"certificado":{"name":"SOLUTECHYSTEMS NOVO -  Soltec000.pfx","full_path":"SOLUTECHYSTEMS NOVO -  Soltec000.pfx","type":"application\/x-pkcs12","tmp_name":"\/tmp\/phpBenrgq","error":0,"size":3836}}}
+
+12/01/2024 17:03:47 - {"senhaCertificado":"Soltec000"}
+

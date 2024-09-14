@@ -1,0 +1,1 @@
+<script src="<?php echo(DIRJS."lancamentos/recebimento5.js"); ?>"></script>

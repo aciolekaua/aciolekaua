@@ -1,0 +1,41 @@
+:root{
+    --orange: #e73635;
+}
+.teste{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.1rem;
+}
+.testeNota{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0.1rem;
+}
+.testeLabel{
+    font-size:0.8rem;    
+}
+.btn-orange{
+    background-color:var(--orange);
+    border-color:var(--orange);
+}
+.form-check-input:checked{
+    background-color:var(--orange);
+    border-color:var(--orange);
+}
+.form-check-input{
+   /* background-color:var(--orange);
+    border-color:var(--orange);*/
+}
+.form-check-input:focus, .btn-orange:focus{
+    box-shadow: 0 0 0 0.25rem rgba(255,8,68,.25);
+}
+@media only screen and (max-width:924px){
+    .testeNota{
+    grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width:670px){
+    .teste{
+    grid-template-columns: 1fr;
+    }
+}

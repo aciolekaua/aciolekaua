@@ -1,0 +1,116 @@
+.card{
+    background-color:#fff5;
+    backdrop-filter:blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius:.8rem;
+}
+.card-header{
+    background-color: #fff4;  
+}
+.dt-row{
+    overflow: overlay;
+}
+.table-responsive::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.table-responsive::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+.table-responsive:hover::-webkit-scrollbar-thumb{ 
+    visibility: visible;
+}
+tbody, td, tfoot, th, thead, tr{
+    border-style:none;
+}
+table,th,td{
+    border-collapse:collapse;
+}
+thead, th{
+    background-color:#eef3fa;    
+}
+.table-striped>tbody>tr>td{
+    text-align:center;
+    justify-content:center;
+    padding:1.2rem 1.3rem 0.4rem 0.8rem;
+}
+.table-striped>tbody>tr:nth-of-type(even){
+    /*background-color:#0000000b;*/
+    background-color:#ffe5e508;
+}
+.table-striped>tbody>tr:nth-of-type(odd){
+    background-color: #fff6f675;
+}
+.table-striped>tbody>tr:hover{
+    background-color: #f6fbff !important;
+}
+table.dataTable thead>tr>th.sorting, table.dataTable thead>tr>th.sorting_asc, table.dataTable thead>tr>th.sorting_desc, table.dataTable thead>tr>th.sorting_asc_disabled, table.dataTable thead>tr>th.sorting_desc_disabled, table.dataTable thead>tr>td.sorting, table.dataTable thead>tr>td.sorting_asc, table.dataTable thead>tr>td.sorting_desc, table.dataTable thead>tr>td.sorting_asc_disabled, table.dataTable thead>tr>td.sorting_desc_disabled{
+    text-align:center;
+    justify-content:center;
+}
+table.dataTable thead>tr>th.sorting:after, table.dataTable thead>tr>th.sorting_asc:after, table.dataTable thead>tr>th.sorting_desc:after, table.dataTable thead>tr>th.sorting_asc_disabled:after, table.dataTable thead>tr>th.sorting_desc_disabled:after, table.dataTable thead>tr>td.sorting:after, table.dataTable thead>tr>td.sorting_asc:after, table.dataTable thead>tr>td.sorting_desc:after, table.dataTable thead>tr>td.sorting_asc_disabled:after, table.dataTable thead>tr>td.sorting_desc_disabled:after{
+/*table.dataTable thead>tr>th.sorting:after{*/
+   color:#7CB9E8;    
+}
+table.dataTable thead>tr>th.sorting:before, table.dataTable thead>tr>th.sorting_asc:before, table.dataTable thead>tr>th.sorting_desc:before, table.dataTable thead>tr>th.sorting_asc_disabled:before, table.dataTable thead>tr>th.sorting_desc_disabled:before, table.dataTable thead>tr>td.sorting:before, table.dataTable thead>tr>td.sorting_asc:before, table.dataTable thead>tr>td.sorting_desc:before, table.dataTable thead>tr>td.sorting_asc_disabled:before, table.dataTable thead>tr>td.sorting_desc_disabled:before{
+    color:#7CB9E8;    
+}
+table.dataTable thead>tr>th.sorting:before, table.dataTable thead>tr>th.sorting:after, table.dataTable thead>tr>th.sorting_asc:before, table.dataTable thead>tr>th.sorting_asc:after, table.dataTable thead>tr>th.sorting_desc:before, table.dataTable thead>tr>th.sorting_desc:after, table.dataTable thead>tr>th.sorting_asc_disabled:before, table.dataTable thead>tr>th.sorting_asc_disabled:after, table.dataTable thead>tr>th.sorting_desc_disabled:before, table.dataTable thead>tr>th.sorting_desc_disabled:after, table.dataTable thead>tr>td.sorting:before, table.dataTable thead>tr>td.sorting:after, table.dataTable thead>tr>td.sorting_asc:before, table.dataTable thead>tr>td.sorting_asc:after, table.dataTable thead>tr>td.sorting_desc:before, table.dataTable thead>tr>td.sorting_desc:after, table.dataTable thead>tr>td.sorting_asc_disabled:before, table.dataTable thead>tr>td.sorting_asc_disabled:after, table.dataTable thead>tr>td.sorting_desc_disabled:before, table.dataTable thead>tr>td.sorting_desc_disabled:after{
+    color:#4d8ad3;    
+}
+.status {
+    display:flex;
+    width:120px;
+    height:36px;
+    padding: .4rem 0;
+    border-radius: 2rem;
+    text-align: center;
+    justify-content:center;
+}
+.status.cancelado {
+    background-color: #d893a3;
+    color: #b30021;
+}
+.status.aprovado {
+    background-color: #86e49d;
+    color: #006b21;
+}
+.status.pendente {
+    background-color: #ebc474;
+    color:#ff4900;
+}
+/*.status.cancelado {*/
+/*    background-color: #6fcaea;*/
+/*}*/
+/*#teste{
+    display:flex;
+    color:#bb2d3b;
+    font-size:28px;
+    align-items:center;
+    justify-content: center;
+}
+#teste:hover{
+    color:#ff5465;
+}
+#testeError{
+    display:flex;
+    font-size:28px;
+    align-items:center;
+    justify-content: center;
+}*/
+td,th{
+    white-space: nowrap;
+    /*white-space: normal;*/
+}
+
+#menssage{
+    z-index:50;
+    position:fixed;
+    right: 0; 
+    bottom: 0; 
+    margin:0 1% 1% 0;
+}

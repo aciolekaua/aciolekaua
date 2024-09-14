@@ -1,0 +1,39 @@
+.form-control-sm:focus{
+    border-color: #e73635;
+    box-shadow: 0 0 0 0.2rem rgba(248,137,133,0.5214460784313726);
+}
+.form-select:focus{
+    border-color:#ff0844;
+    box-shadow: 0 0 0 0.25rem rgba(255,8,68,.25);
+}
+.form-control:focus{
+    border-color:#ff0844;
+    box-shadow: 0 0 0 0.25rem rgba(255,8,68,.25);
+}
+.form-check-input:checked {
+    background-color: #ff0844;
+    border-color: #ff0844;
+}
+.form-check-input:focus{
+    box-shadow: 0 0 0 0.25rem rgba(255,8,68,.25);
+}
+.page-link{
+    color:#ff0844;
+}
+.page-link:hover{
+    color:#ff0844;
+}
+.page-link:focus{
+     border-color: #e73635;
+        box-shadow: 0 0 0 0.2rem rgba(248,137,133,0.5214460784313726);
+}
+.page-item.active .page-link{
+    background-color: #ff0844;
+    border-color: #ff0844;
+}
+.card-header{
+    color:#fff9f5;
+}
+.card-header i{
+    color:#fff9f5;
+}
